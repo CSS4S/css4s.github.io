@@ -1,0 +1,98 @@
+---
+title: "Computational Social Science for Sustainability"
+format:
+    html:
+        toc: true
+        echo: false
+        fontsize: medium
+bibliography: /Users/mt/workspace/Writing/library.bib
+---
+
+## IC2S2 2025 Tutorial
+
+Hello and welcome to the tutorial website. Below is a brief abstract, a syllabus
+outlining the plan and references for the tutorial, information on the history
+of the course, and course resources.
+
+The tutorial is under active development. Course content is set to focus on 
+the diffusion of adaptations in social networks through non-adaptive contagion 
+learning and frequency- and success-biased adaptive learning strategies. 
+
+The first offering of this material as a graduate- and undergraduate-level
+course is occurring now, Winter quarter 2025 at the Stanford Doerr School of
+Sustainability, department of Environmental Social Sciences.  This tutorial is a
+condensed three-hour overview of that material, focused on demonstrating how
+participants may harness this approach to social science using the `socmod`
+library to design, implement, and analyze their own models for their 
+domains of interest.
+
+
+### Abstract
+
+Humans face an existential challenge to transition to sustainable practices that
+do not exhaust available ecological, economic, and social capital. Computational
+social-cognitive models can be used to deduce the efficacy of potential training
+or educational interventions to promote sustainable practices. Tutorial
+attendees will learn to use the `socmod` library
+to create their own models of social learning and social influence to predict
+the relative success of different intervention strategies. Sustainability
+motivates this work, but the framework could be used to model 
+related social and behavioral contexts.
+
+
+### Syllabus
+
+The following outlines the three-hour tutorial.
+
+#### Pre-requesites/pre-workshop
+
+It would help to have installed [R and
+RStudio](https://posit.co/download/rstudio-desktop/). 
+
+Review the Introduction in the Course Notes. We will not cover material from the
+cooperation and coordination subsections.
+
+
+#### Hour 1: Diffusion of adaptations through social networks 
+
+- `socmod` and the social behavior modeling framework.
+- Non-adaptive contagion models of social learning.
+    - Definition---a person adopts a behavior with some probability if they are
+      exposed as in epidemiology; agent-based formulation.
+    - Comparison with well-mixed and large-$N$ formal calculations.
+- Adaptive success-biased learning can boost diffusion of adaptations.
+    - Definition---higher fitness means greater chance to be a
+      teacher/demonstrator; agent-based formulation.
+    - Comparison with well-mixed, large-$N$ formal calculations.
+    - Note: the frequency-biased strategy is another type of adaptive learning where 
+      a learner is more likely to adopt behaviors they observe to occur more
+      frequently.
+
+
+#### Hour 2: Social influence of belief and opinion
+
+- Opinion dynamics: opinions (or beliefs, etc.) as points in space; 
+  discourse as forces acting between opinions.
+- Agent-based modeling applications:
+    - Group polarization from stubborn extremism.
+    - Understand whcih factors make political polarization more or less random 
+      and path dependent [@Turner2018].
+
+#### Hour 3: Models meet real world
+
+- Group polarization replications may be marred by high false discovery rates.
+- How minority-majority core-periphery structure can promote sustainable
+  adaptations [@Turner2023].
+
+
+
+## Resources
+
+- The [`socmod`](https://css4s.github.io/socmod/) 
+  R library provides a toolkit for building and running iterative models of
+  social behavior. It focuses on agent-based models, currently on social
+  learning models of the diffusion of adapta tions.  It integrates with `igraph`
+  to enable agent-based model initialization with real-world networks.
+- The [Course Notes](../notes/index.html) provide useful information (sometimes) in narrative form
+  explaining the development and theory of this modeling framework.
+

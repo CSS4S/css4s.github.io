@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website:
+  title: "CSS4S"
+  favicon: Logo.png
+  navbar:
+    background: "#8C1515"
+    foreground: "#FFFFFF"
+    right:
+      - href: index.qmd
+        text: Home
+ 
+      - href: notes-old.qmd
+        text: Course Notes
+
+      - href: https://mt.digital/teaching/CSS4S/
+        text: EBS 181/281 Winter 2025
+
+      - href: https://css4s.github.io/socmod
+        text: R library `socmod`
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+bibliography: /users/mt/workspace/Writing/library.bib

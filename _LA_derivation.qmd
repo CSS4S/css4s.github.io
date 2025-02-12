@@ -1,0 +1,53 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+
+Perform partial fraction decomposition on $\frac{1}{A (N - A)}$: $$
+\frac{1}{A (N - A)} = \frac{1}{N} \left( \frac{1}{A} + \frac{1}{N - A} \right).
+$$
+
+Integrate both sides: $$
+\int \frac{1}{N} \left( \frac{1}{A} + \frac{1}{N - A} \right) dA = \int \alpha \, dt.
+$$
+
+This yields: $$
+\frac{1}{N} \left( \ln|A| - \ln|N - A| \right) = \alpha t + C,
+$$ where$C$is the integration constant.
+
+Simplify: $$
+\ln\left(\frac{A}{N - A}\right) = \alpha N t + C',
+$$ where $C' =  N C$.
+
+Exponentiate to solve for$A$: $$
+\frac{A}{N - A} = e^{\alpha N t + C'}.
+$$
+
+Rearranging gives: $$
+A = \frac{N}{1 + e^{-C' - \alpha N t}}.
+$$
+
+Finally, rewrite $e^{-C'}$ as a constant $K$: $$
+A = \frac{N}{1 + K e^{-\alpha N t}},
+$$ {#eq-logistic}
+
+where $K$ depends on the initial conditions.
+
+This is the solution for $A(t)$, and $L(t)$ can be recovered using
+$L(t) = N - A(t)$.
+
+To find $K$ for some initial condition, set $t=0$, call $A_0 = A(t=0)$,
+and solve for $K$. Note that when $t=0$, the denominator in Equation
+@eq-logistic becomes $1 + K$ since $e^0 = 1$. Then we have
+
+$$
+A(0) = \frac{N}{1 + K}
+$$
+
+which we can multiply by $1 + K$ on both sides and rearrange to get
+
+$$
+K = \frac{N}{A_0}.
+$$

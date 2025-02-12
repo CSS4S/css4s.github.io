@@ -1,0 +1,42 @@
+---
+title: "Computational Social Science for Sustainability"
+editor: 
+  markdown: 
+    wrap: 80
+---
+
+<!-- ## Winter 2025 {.unlisted} -->
+
+## Welcome!
+
+Humans face an existential challenge to transition to sustainable practices
+that do not exhaust available ecological, economic, and social capital. 
+This transition
+needs a rigorous, robust, and practical science of social behavior because it is difficult to 
+predict the success of using limited educational or training resources to promote
+sustainability. It must be able to deductively estimate the 
+costs and benefits of different
+intervention strategies by analyzing formal or computational models of
+interventions since different social contexts demand different
+designs.
+
+Students in this course will develop their own formal and computational
+models of social behavior using the `socmod` library in R. This library
+integrates with `igraph` enabling researchers to create agent-based models with
+real-world social networks. By the end of the course, students will have gained
+practical technical skills in R programming and data science, a deeper
+understanding of how to apply computational tools to social science, and the
+ability to design research that addresses pressing sustainability challenges. 
+
+
+<!--The modeling framework is designed to encapsulate different approaches to
+modeling diverse social behaviors. The lessons here apply to social behavior in
+general. Our deductive approach complements inferential techniques for
+computational social science, such as using machine learning to predict
+resource-intensive human behavior like vehicle charging/refueling to optimize
+resource use. -->
+
+## Resources
+
+- [`socmod`](https://css4s.github.io/socmod) social behavior modeling library
+- [Course notes](notes/)
